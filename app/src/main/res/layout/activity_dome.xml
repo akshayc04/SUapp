@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.achougulsyr.su_app.dome">
+
+
+    <ImageView
+        android:id="@+id/backdome"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/sudome"/>
+
+    <ImageButton
+        android:id="@+id/picturesdome"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="80dp"
+        android:layout_below="@+id/backdome"
+        android:onClick="dome_pic"
+        android:background="@drawable/picture"/>
+
+    <ImageButton
+        android:id="@+id/videodome"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/picturesdome"
+        android:onClick="dome_vid"
+        android:background="@drawable/video"/>
+
+    <ImageButton
+        android:id="@+id/mapdome"
+        android:layout_width="300dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="80dp"
+        android:layout_below="@+id/videodome"
+        android:onClick="dome_map"
+        android:background="@drawable/locate"/>
+
+
+</RelativeLayout>
